@@ -1,27 +1,118 @@
 @import "block/main-header.less";
-@import "block/main-header__navigation.less";
-@import "block/navigation__menu.less";
-@import "block/navigation__menu--flex.less";
-@import "block/navigation__menu--hidden.less";
+
+@import "block/main-header__menu.less";
+
+@import "block/main-header__menu--flex.less";
+
 @import "block/menu__list.less";
+
 @import "block/menu__list-item.less";
+
+@import "text/menu__list-item-link.less";
+
 @import "block/index-main.less";
+
 @import "block/index-main__index-page.less";
-@import "block/programs.less";
+
+@import "block/index-main__programs.less";
+
 @import "block/programs__container.less";
+
+@import "text/programs__container-title.less";
+
+@import "text/programs__container-block-link.less";
+
 @import "block/explanation.less";
+
+@import "text/explanation__title.less";
+
 @import "block/explanation__list.less";
-@import "block/explanation__item.less";
+
+@import "text/explanation__list-item.less";
+
 @import "block/example.less";
-@import "block/example__container.less";
+
+@import "text/example__title.less";
+
+@import "text/example__text.less";
+
 @import "block/example__container--flex.less";
-@import "block/example__container-block.less";
+
+@import "block/example__container.less";
+
+@import "block/example__container-block";
+
+@import "text/example__container-title";
+
+@import "text/example__container-text.less";
+
+@import "text/example__price.less";
+
 @import "block/example__range.less";
+
 @import "block/example__range--flex.less";
+
+@import "img-block/range__cat-before.less";
+
 @import "block/main-footer.less";
+
 @import "block/main-footer__contacts.less";
-@import "block/main-footer__maps.less";
+
+@import "text/contacts__text.less";
+
+@import "text/contacts__adress.less";
+
 @import "block/main-footer__links.less";
+
 @import "block/links__list.less";
-@import "block/links__item.less";
-@import "block/main-header__navigation.less";
+
+@import "img-block/links__logo-svg.less";
+
+@import "block/html-links.less";
+
+@import "text/links__logo.less";
+
+body {
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+@import "visually-hidden/visually-hidden.less";
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../source/fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../source/fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../source/fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../source/fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
