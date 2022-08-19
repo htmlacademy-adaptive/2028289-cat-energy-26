@@ -1,0 +1,91 @@
+.index-main__explanation {
+  padding: 0 20px 49px 20px;
+}
+
+.explanation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 80px;
+}
+
+.explanation__list-item {
+  margin-top: 26px;
+  color: #444444;
+  position: relative;
+}
+
+.explanation__list-item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  left: -80px;
+  z-index: 1;
+}
+
+.explanation__list-listok::after {
+  content: "";
+  background-image: url("../img/description-listok.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+  top: 0;
+  z-index: 2;
+}
+
+.explanation__list-water::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  background-image: url("../img/description-water.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  z-index: 2;
+}
+
+.explanation__list-spoon::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  z-index: 2;
+  background-image: url("../img/description-fork-and-spoon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 60px;
+  height: 60px;
+  top: 0;
+}
+
+.explanation__list-clock::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  z-index: 2;
+  background-image: url("../img/description-alarm-clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 60px;
+  height: 60px;
+  top: 0;
+}
+
+.explanation__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
