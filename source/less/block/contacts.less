@@ -14,3 +14,28 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .main-footer__contacts {
+    padding: 56px 70px 56px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__contacts {
+    position: relative;
+    padding: 0;
+  }
+
+  .contacts__block--desktop {
+    position: absolute;
+    display: flex;
+    padding: 56px 80px 56px 80px;
+    background-color: #ffffff;
+    z-index: 10000;
+    top: 100px;
+    left: 100px;
+  }
+}
