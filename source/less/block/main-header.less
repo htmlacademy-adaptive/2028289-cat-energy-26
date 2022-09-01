@@ -16,10 +16,8 @@
 
 .main-header__menu--hidden {
   position: absolute;
-  height: 100%;
   width: 100%;
   left: 0;
-  top: 69px;
   z-index: 100;
 }
 
@@ -35,8 +33,14 @@
   }
 
   .main-header--flex-inner {
+    position: static;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main-header__menu--hidden {
+    position: static;
   }
 }
 
@@ -48,5 +52,9 @@
 
   .main-header--flex-inner {
     display: flex;
+  }
+
+  .main-header__menu--hidden {
+    position: static;
   }
 }
