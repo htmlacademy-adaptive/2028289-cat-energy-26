@@ -103,37 +103,32 @@
   }
 
   .example__container-padding {
-    padding: 43px 30px 230px 30px;
+    padding: 43px 0 692px 0;
   }
 
   .example__contauner--flex-tablet {
     display: flex;
     justify-content: space-between;
   }
-
-  .example__block--background-gray-tablet {
-    min-width: 768px;
-    min-height: 462px;
-    background-color: #eaeaea;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .example__block--background-gray-tablet {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
   .example__range--flex {
     position: absolute;
     left: 900px;
     top: -50px;
     min-height: 512px;
+  }
+
+  .example__container-padding {
+    padding: 0 784px 0 0;
+  }
+
+  .example__text {
+    margin-bottom: 69px;
+  }
+
+  .example__contauner--flex-tablet {
+    display: inline;
   }
 }
