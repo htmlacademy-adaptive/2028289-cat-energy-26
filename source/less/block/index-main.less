@@ -5,53 +5,86 @@
 }
 
 .index-main__index-page {
-  position: relative;
-  padding: 27px 35px 164px 36px;
-  background-image: url("../img/cat-index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
-  background-position: center;
-  background-color: rgba(104, 183, 56, 0.85);
-}
-
-.index-main__index-page::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  background-color: rgba(104, 183, 56, 0.85);
-  z-index: 1;
+  min-width: 320px;
+  min-height: 302px;
+  margin: 0 auto;
 }
 
 .index-main__programs {
-  padding: 138px 20px 20px 20px;
+  padding: 0 0 20px 0;
 }
 
 .index-main__explanation {
-  padding: 0 20px 49px 20px;
+  padding: 0 0 49px 0;
 }
 
 .index-main__example {
-  padding: 25px 20px 40px 20px;
-  background-color: #eaeaea;
+  padding: 25px 0 40px 0;
+  background: linear-gradient(#eaeaea, #eaeaea) bottom/100% 85% repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .index-main__index-page {
+  .index-main {
     margin: 0 auto;
     box-sizing: border-box;
     width: 768px;
-    padding: 62px 237px 526px 120px;
+  }
+
+  .index-main__index-page {
+    padding: 62px 0 526px 0;
+    box-sizing: border-box;
+    background-image: url("../img/index-can-eat-big.jpg");
+    background-repeat: no-repeat;
+    background-position: -30px 110%;
+    background-size: 709px 609px;
+  }
+
+  .index-main__programs {
+    padding: 0 0 45px 0;
+  }
+
+  .index-main__explanation {
+    padding: 0 0 104px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .index-main__example {
+    position: relative;
+    padding: 0;
+    background: linear-gradient(#eaeaea, #eaeaea) bottom/100% 45% repeat;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .index-main__index-page {
+  .index-main {
     margin: 0 auto;
     box-sizing: border-box;
     width: 1440px;
-    padding: 62px 237px 526px 120px;
+  }
+
+  .index-main__index-page {
+    padding: 111px 0 264px 0;
+    min-width: 720px;
+    min-height: 600px;
+    background-image: url("../img/cat-index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 1000px -40px;
+  }
+
+  .index-main__programs {
+    padding: 82px 0 71px 0;
+  }
+
+  .index-main__explanation {
+    padding: 0 0 126px 0;
+    border: none;
+  }
+
+  .index-main__example {
+    padding: 0 0 75px 0;
+    background: linear-gradient(#f2f2f2, #f2f2f2) bottom/100% 85% repeat;
+    background-repeat: no-repeat;
   }
 }

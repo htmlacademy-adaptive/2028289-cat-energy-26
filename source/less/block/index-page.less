@@ -1,26 +1,30 @@
-.index-page__button {
-  margin-bottom: 120px;
-  width: 280px;
-  padding: 9px 44px;
-  background-color: #68b738;
+.index-page__block-button-programs {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: #68b738;
+  padding: 8px 44px;
+  box-sizing: border-box;
 }
 
-.index-page__picture {
+.index-page__block-button {
+  margin: 0 auto;
+  text-align: center;
+  padding: 140px 20px 20px 20px;
+}
+
+.index-page__block-picture {
   position: absolute;
-  top: 180px;
-  right: 20px;
-  z-index: 3;
+  z-index: 50;
+  top: 170px;
+  left: 20px;
 }
 
-.index-page__title {
+.index-page__block-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -30,7 +34,28 @@
   margin: 0;
 }
 
-.index-page__text {
+.index-page__block {
+  position: relative;
+  padding: 27px 35px 164px 36px;
+  background-image: url("../img/cat-index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: center;
+  // background-color: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) bottom/100% 85% repeat;
+}
+
+.index-page__block::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(104, 183, 56, 0.85);
+  z-index: 2;
+}
+
+.index-page__block-text {
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -40,4 +65,101 @@
   text-align: center;
   margin-top: 25px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .index-page__block {
+    box-sizing: border-box;
+    padding: 0;
+    background: none;
+  }
+
+  .index-page__block::before {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .index-page__block-title {
+    color: #000000;
+    text-align: left;
+  }
+
+  .index-page__block-picture-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1234567890;
+  }
+
+  .index-page__block-text {
+    color: #000000;
+    text-align: left;
+  }
+
+  .index-page__block-button {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 63px;
+    text-align: left;
+  }
+
+  .index-page__block-picture {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-page__block {
+    position: relative;
+  }
+
+  .index-page__block-picture-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000000000000000000;
+  }
+
+  .index-page__block-title {
+    color: #000000;
+  }
+
+  .index-page__block::after {
+    content: "";
+    width: 720px;
+    height: 694px;
+    left: 640px;
+    top: -210px;
+    position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: 2222;
+  }
+
+  .index-page__block-button-programs::after {
+    content: "";
+    position: absolute;
+    min-width: 552px;
+    min-height: 499px;
+    background-image: url("../img/index-eat-big-desctap.png");
+    background-repeat: no-repeat;
+    background-size: 552px 499px;
+    background-position: center;
+    top: 110px;
+    left: 800px;
+    z-index: 1000000;
+  }
 }

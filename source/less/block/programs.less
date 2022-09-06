@@ -1,7 +1,10 @@
 .programs__container:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programs__container {
   padding: 24px 33px 22px 20px;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
 }
 
 .programs__container-block-link {
@@ -63,4 +66,34 @@
   height: 28px;
   left: -80px;
   top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__container:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .programs__container {
+    padding: 77px 316px 57px 53px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-main__programs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__container {
+    padding: 77px 51px 55px 52px;
+    background-color: #f2f2f2;
+    min-width: 570px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  .programs__container:not(:last-child) {
+    margin-bottom: 0;
+  }
 }

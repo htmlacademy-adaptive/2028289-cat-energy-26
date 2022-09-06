@@ -21,7 +21,7 @@
   z-index: 1;
 }
 
-.explanation__list-listok::after {
+.explanation__list--listok::after {
   content: "";
   background-image: url("../img/description-listok.svg");
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
   z-index: 2;
 }
 
-.explanation__list-water::after {
+.explanation__list--water::after {
   content: "";
   position: absolute;
   left: -80px;
@@ -49,7 +49,7 @@
   z-index: 2;
 }
 
-.explanation__list-spoon::after {
+.explanation__list--spoon::after {
   content: "";
   position: absolute;
   left: -80px;
@@ -63,7 +63,7 @@
   top: 0;
 }
 
-.explanation__list-clock::after {
+.explanation__list--clock::after {
   content: "";
   position: absolute;
   left: -80px;
@@ -84,4 +84,23 @@
   line-height: 40px;
   font-weight: 400;
   margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explanation__list-item {
+    width: 245px;
+    height: 183px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
