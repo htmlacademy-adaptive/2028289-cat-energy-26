@@ -209,7 +209,7 @@
   }
 
   .programs__container {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 0 55px 52px;
     background-color: #f2f2f2;
     min-width: 570px;
     box-sizing: border-box;
@@ -218,5 +218,47 @@
 
   .programs__container:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .programs__container-title {
+    margin-left: 162px;
+  }
+
+  .programs__container-text {
+    margin: 73px 0 23px 0;
+  }
+
+  .programs__container-title::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #68b738;
+    left: -165px;
+    top: -30px;
+  }
+
+  .programs__container-title--cat::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/vector-cat.svg");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 50px;
+    left: -165px;
+    top: -10px;
+  }
+
+  .programs__container-title--next-cat::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector-athletic-cat.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+    left: -80px;
+    top: 5px;
   }
 }

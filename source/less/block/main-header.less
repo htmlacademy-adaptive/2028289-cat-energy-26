@@ -42,12 +42,32 @@
   .main-header__menu--hidden {
     position: static;
   }
+
+  .main-header__menu--flex-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__menu--flex {
+    padding-top: 24px;
+    margin-right: 94px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-header {
     width: 1440px;
     margin: 0 auto;
+    background-color: transparent;
+    // background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) top/50% 70% repeat;
+    // background-repeat: no-repeat;
+  }
+
+  .main-header--desktop-absolute {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 999999999999999999999999999;
   }
 
   .main-header--flex-inner {
@@ -57,5 +77,18 @@
 
   .main-header__menu--hidden {
     position: static;
+    min-width: 478px;
+    padding: 69px 0 0 132px;
+  }
+
+  .main-header__menu--flex-inner {
+    display: flex;
+    background-color: inherit;
+  }
+
+  .main-header__menu--flex {
+    width: 174px;
+    padding: 53px 408px 0 0;
+    margin-right: 0;
   }
 }
