@@ -3,9 +3,28 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+  align-self: center;
 }
 
 .html-links {
   display: flex;
   justify-content: space-between;
+  margin-top: 22px;
+}
+
+.links__html-logo {
+  align-self: center;
+}
+
+@media (min-width: @tablet-width) {
+  .html-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .links__html-logo {
+    align-self: center;
+    margin-left: 22px;
+  }
 }
