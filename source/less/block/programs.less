@@ -182,27 +182,49 @@
   .programs__container-block--cat-tablet::after {
     position: absolute;
     content: "";
-    background-image: url("../img/vector-cat-tablet.svg");
+    background-image: url("../img/Vector-cat-tablet.png");
     background-repeat: no-repeat;
     width: 140px;
     height: 194px;
-    left: -65px;
-    top: -10px;
+    left: 430px;
+    top: -200px;
   }
 
   .programs__container-block--next-cat-tablet::after {
     position: absolute;
     content: "";
-    background-image: url("../img/Vector-athletic-cat-tablet.svg");
+    background-image: url("../img/Vector-cat-tablet-atletics.png");
     background-repeat: no-repeat;
     width: 268px;
     height: 112px;
-    left: -80px;
-    top: 5px;
+    left: 360px;
+    top: -150px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .programs__container-block--next-cat-tablet::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .programs__container-block--cat-tablet::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
   .index-main__programs {
     display: flex;
     justify-content: space-between;
@@ -240,25 +262,33 @@
     top: -30px;
   }
 
-  .programs__container-title--cat::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/vector-cat.svg");
-    background-repeat: no-repeat;
-    width: 36px;
-    height: 50px;
-    left: -165px;
-    top: -10px;
+  .programs__container-title--cat-desktop {
+    position: relative;
   }
 
-  .programs__container-title--next-cat::after {
+  .programs__container-title--next-cat-desktop {
+    position: relative;
+  }
+
+  .programs__container-title--cat-desktop::after {
     position: absolute;
     content: "";
-    background-image: url("../img/Vector-athletic-cat.svg");
+    background-image: url("../img/Vector-cat-desctop.png");
     background-repeat: no-repeat;
-    width: 67px;
-    height: 28px;
-    left: -80px;
-    top: 5px;
+    width: 70px;
+    height: 97px;
+    left: 10px;
+    top: -241px;
+  }
+
+  .programs__container-title--next-cat-desktop::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector-cat-desktop-athletic.png");
+    background-repeat: no-repeat;
+    width: 134px;
+    height: 56px;
+    left: -20px;
+    top: -210px;
   }
 }

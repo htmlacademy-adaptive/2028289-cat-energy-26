@@ -56,18 +56,22 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
+    position: relative;
     width: 1440px;
     margin: 0 auto;
     background-color: transparent;
-    // background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) top/50% 70% repeat;
-    // background-repeat: no-repeat;
   }
 
-  .main-header--desktop-absolute {
+  .container--desktop {
     position: absolute;
     top: 0;
     right: 40px;
     z-index: 999999999999999999999999999;
+    @media (min-width: @desktop-width) {
+      width: 1440px;
+      padding: 0 110px;
+      margin: 0 auto;
+    }
   }
 
   .main-header--flex-inner {

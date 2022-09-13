@@ -11,7 +11,7 @@
 }
 
 .example__container {
-  width: 280px;
+  min-width: 280px;
 }
 
 .example__range--flex {
@@ -44,7 +44,7 @@
 }
 
 .example__range {
-  width: 140px;
+  min-width: 140px;
   margin: 0;
 }
 
@@ -95,6 +95,20 @@
   background-size: cover;
 }
 
+.example__range-left::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/Vector-arrow-left-right.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  background-position: center;
+  min-width: 24px;
+  min-height: 18px;
+  top: 120px;
+  left: 128px;
+  z-index: 9999999999999999;
+}
+
 .example__range-right {
   background-image: url("../img/CAT-after1x.png");
   background-repeat: no-repeat;
@@ -111,10 +125,30 @@
   }
 
   .example__range-left {
+    position: relative;
     background-image: url("../img/CAT-before@2x.png");
     background-repeat: no-repeat;
     background-position: 0;
     min-width: 280px;
+  }
+
+  .example__container {
+    min-width: 324px;
+    justify-content: space-between;
+  }
+
+  .example__range-left::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/Vector-arrow-left-right.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 18px;
+    background-position: center;
+    min-width: 24px;
+    min-height: 18px;
+    top: 248px;
+    left: 268px;
+    z-index: 9999999999999999;
   }
 
   .example__range-right {
@@ -179,10 +213,39 @@
   }
 
   .example__container-text {
+    display: inline-block;
     font-weight: 400;
     font-size: 30px;
     line-height: 37px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    margin: 0;
+    top: 0;
+    border-radius: 8px;
+    border-bottom-width: 0;
+    bottom: 0;
+    min-width: 162px;
+    padding: 15px 0 45px 0;
   }
+
+  .example__container-title {
+    display: inline-block;
+  }
+
+  .example__container-block {
+    position: relative;
+    display: inline-block;
+  }
+
+  // .example__container-block--border-left {
+  //   position: absolute;
+  //   border: 1px solid #cdcdcd;
+  //   top: 0;
+  //   border-radius: 8px;
+  //   border-bottom-width: 0;
+  //   bottom: 0;
+  //   min-width: 162px;
+  // }
 
   .example__container-block:first-child {
     margin-right: 42px;
