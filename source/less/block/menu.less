@@ -1,16 +1,16 @@
-.menu__list-item {
+.main-header__menu__list-item {
   padding: 22px 0 24px 0;
   border-top: 1px solid #e6e6e6;
 }
 
-.menu__list {
+.main-header__menu__list {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   list-style-type: none;
 }
 
-.menu__list-item-link {
+.main-header__menu__list-item-link {
   text-decoration: none;
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 
-.menu-burger--hidden {
+.main-header__menu-burger--hidden {
   position: relative;
   width: 24px;
   background-color: #ffffff;
@@ -28,11 +28,11 @@
   cursor: pointer;
 }
 
-.svg-cat-energy {
+.main-header__menu-svg-cat-energy {
   align-self: center;
 }
 
-.menu-burger--hidden::before {
+.main-header__menu-burger--hidden::before {
   position: absolute;
   content: "";
   width: 24px;
@@ -43,7 +43,7 @@
   transform: rotate(45deg);
 }
 
-.menu-burger--hidden::after {
+.main-header__menu-burger--hidden::after {
   position: absolute;
   content: "";
   width: 24px;
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .menu-burger--hidden {
+  .main-header__menu-burger--hidden {
     position: absolute;
     width: px;
     height: 1px;
@@ -66,23 +66,36 @@
     overflow: hidden;
   }
 
-  .svg-cat-energy {
-    margin-left: 19px;
+  .main-header__menu-cat-logo-img {
+    min-width: 174px;
+    min-height: 51px;
   }
 
-  .menu__list {
+  .main-header__menu-svg-cat-energy {
+    position: absolute;
+    width: px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-header__menu__list {
     display: flex;
     min-width: 100%;
+    margin-left: 94px;
     justify-content: space-between;
   }
 
-  .menu__list-item {
+  .main-header__menu__list-item {
     border: none;
     padding: 0;
     align-self: center;
   }
 
-  .menu__list-item-link {
+  .main-header__menu__list-item-link {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -90,14 +103,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .menu__list-item-link {
+  .main-header__menu__list-item-link {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     color: #ffffff;
   }
 
-  .menu__list {
+  .main-header__menu-cat-logo-img {
+    min-width: 202px;
+    min-height: 59px;
+  }
+
+  .main-header__menu__list {
     background-color: inherit;
   }
 }
