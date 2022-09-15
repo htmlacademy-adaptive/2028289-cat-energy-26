@@ -27,7 +27,7 @@
   .index-main {
     margin: 0 auto;
     box-sizing: border-box;
-    width: 768px;
+    min-width: 768px;
   }
 
   .index-main__index-page {
@@ -44,7 +44,7 @@
   }
 
   .index-main__explanation {
-    padding: 0 0 104px 0;
+    padding: 0 0 47px 0;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -64,13 +64,11 @@
   }
 
   .index-main__index-page {
-    padding: 111px 0 264px 0;
+    position: relative;
+    padding: 221px 0 185px 0;
     min-width: 720px;
     min-height: 600px;
-    background-image: url("../img/cat-index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 1000px -40px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) right/ 49.5% 100% no-repeat, url("../img/index-background-desktop-cat.jpg") no-repeat right/contain;
   }
 
   .index-main__programs {
@@ -78,13 +76,13 @@
   }
 
   .index-main__explanation {
-    padding: 0 0 126px 0;
+    padding: 0 0 69px 0;
     border: none;
   }
 
   .index-main__example {
     padding: 0 0 75px 0;
-    background: linear-gradient(#f2f2f2, #f2f2f2) bottom/100% 85% repeat;
+    background: linear-gradient(#f2f2f2, #f2f2f2) bottom/100% 80% repeat;
     background-repeat: no-repeat;
   }
 }

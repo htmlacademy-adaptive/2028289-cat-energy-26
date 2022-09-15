@@ -3,8 +3,19 @@
 }
 
 .programs__container {
+  position: relative;
   padding: 24px 33px 22px 20px;
   background-color: #f2f2f2;
+}
+
+.programs__container::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 1px;
+  background-color: #d9d9d9;
+  top: 200px;
+  left: 22px;
 }
 
 .programs__container-block-link {
@@ -14,6 +25,7 @@
   font-size: 16px;
   line-height: 16px;
   margin-right: 17px;
+  font-weight: 400;
 }
 
 .programs__container-text {
@@ -33,6 +45,14 @@
   text-transform: uppercase;
   margin: 0;
   margin-left: 71px;
+}
+
+.programs__container-title--cat {
+  position: relative;
+}
+
+.programs__container-title--next-cat {
+  position: relative;
 }
 
 .programs__container-title::before {
@@ -74,19 +94,144 @@
   }
 
   .programs__container {
-    padding: 77px 316px 57px 53px;
+    padding: 77px 316px 53px 52px;
     background-color: #f2f2f2;
+  }
+
+  .programs__container::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .programs__container-block-link {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 17px;
+    font-weight: 400;
+  }
+
+  .programs__container-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    margin: 24px 0 48px 0;
+  }
+
+  .programs__container-title {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #000000;
+  }
+
+  .programs__container-title::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #68b738;
+    left: 400px;
+    top: 10px;
+  }
+
+  .programs__container-title--cat::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .programs__container-title--next-cat::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .programs__container-block--cat-tablet {
+    position: relative;
+  }
+
+  .programs__container-block--next-cat-tablet {
+    position: relative;
+  }
+
+  .programs__container-block--cat-tablet::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector-cat-tablet.png");
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 194px;
+    left: 430px;
+    top: -200px;
+  }
+
+  .programs__container-block--next-cat-tablet::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector-cat-tablet-atletics.png");
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 112px;
+    left: 360px;
+    top: -150px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .programs__container-block--next-cat-tablet::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .programs__container-block--cat-tablet::after {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
   .index-main__programs {
     display: flex;
     justify-content: space-between;
   }
 
   .programs__container {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 0 55px 52px;
     background-color: #f2f2f2;
     min-width: 570px;
     box-sizing: border-box;
@@ -95,5 +240,55 @@
 
   .programs__container:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .programs__container-title {
+    margin-left: 162px;
+  }
+
+  .programs__container-text {
+    margin: 73px 0 23px 0;
+  }
+
+  .programs__container-title::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #68b738;
+    left: -165px;
+    top: -30px;
+  }
+
+  .programs__container-title--cat-desktop {
+    position: relative;
+  }
+
+  .programs__container-title--next-cat-desktop {
+    position: relative;
+  }
+
+  .programs__container-title--cat-desktop::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector-cat-desctop.png");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 97px;
+    left: 10px;
+    top: -241px;
+  }
+
+  .programs__container-title--next-cat-desktop::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector-cat-desktop-athletic.png");
+    background-repeat: no-repeat;
+    width: 134px;
+    height: 56px;
+    left: -20px;
+    top: -210px;
   }
 }

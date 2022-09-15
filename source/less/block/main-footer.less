@@ -8,6 +8,14 @@
   display: flex;
   margin: 0;
   padding: 26px 0 26px 0;
+
+  .container {
+    display: inherit;
+  }
+}
+
+.contacts__block {
+  display: flex;
 }
 
 .main-footer__links {
@@ -18,12 +26,16 @@
 
 .main-footer__maps {
   position: relative;
-  background-image: url("../img/map.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 320px 362px;
   min-width: 320px;
-  min-height: 352px;
+
+  .container {
+    min-width: 320px;
+    padding: 0;
+  }
+}
+
+.main-footer__maps-one {
+  min-width: 320px;
 }
 
 .main-footer__maps::after {
@@ -45,18 +57,37 @@
     width: 768px;
   }
 
+  .main-footer__links {
+    padding: 58px 0 55px 0;
+  }
+
+  .main-footer__contacts {
+    padding: 56px 0 56px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .main-footer__links--flex-tablet {
     display: flex;
   }
 
   .main-footer__maps {
     position: relative;
-    background-image: url("../img/map-big.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 768px 400px;
     min-width: 768px;
-    min-height: 400px;
+
+    .container {
+      min-width: 768px;
+      padding: 0;
+    }
+  }
+
+  .contacts__block {
+    display: inherit;
+    padding: 0 40px 0 40px;
+  }
+
+  .main-footer__maps-one {
+    min-width: 768px;
   }
 
   .main-footer__maps::after {
@@ -81,12 +112,16 @@
 
   .main-footer__maps {
     position: relative;
-    background-image: url("../img/map-big-desctop.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1440px 400px;
     min-width: 1440px;
-    min-height: 400px;
+
+    .container {
+      min-width: 1440px;
+      padding: 0;
+    }
+  }
+
+  .main-footer__maps-one {
+    min-width: 1440px;
   }
 
   .main-footer__maps::after {
@@ -100,5 +135,29 @@
     height: 106px;
     left: 912px;
     top: 125px;
+  }
+
+  .main-footer__links {
+    padding: 57px 0 58px 0;
+  }
+
+  .main-footer__contacts {
+    position: relative;
+    padding: 0;
+
+    .container {
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      box-sizing: border-box;
+      padding: 0 20px;
+      z-index: 99999999999999999;
+      background-color: #ffffff;
+      max-width: 565px;
+    }
+  }
+
+  .contacts__block {
+    padding: 56px 40px 56px 40px;
   }
 }

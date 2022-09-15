@@ -1,11 +1,12 @@
-.contacts__adress {
+.contacts__block-adress {
   font-family: "Arial", sans-serif;
   font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
   color: #444444;
 }
 
-.contacts__text {
+.contacts__block-text {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -16,16 +17,41 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer__contacts {
-    padding: 56px 0 56px 0;
-    display: flex;
-    justify-content: space-between;
+  .contacts__block-text {
+    display: block;
+    min-width: 171px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    color: #111111;
+    text-transform: uppercase;
+  }
+
+  .contacts__block-adress {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+    color: #444444;
+    margin-left: 256px;
+    text-align: right;
+  }
+
+  .contacts__block-adress-margin {
+    display: block;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer__contacts {
-    position: relative;
-    padding: 0;
+  .contacts__block-adress {
+    margin: 0;
+    text-align: left;
+  }
+
+  .contacts__block-text {
+    margin-right: 70px;
   }
 }
