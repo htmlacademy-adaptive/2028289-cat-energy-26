@@ -99,16 +99,21 @@
 }
 
 .example__range-left {
-  background-image: url("../img/CAT-before@1x.png");
+  background-image: url("../img/cat-before.png");
   background-repeat: no-repeat;
   background-position: 0;
-  background-size: cover;
+  background-size: 280px 256px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-before-2ppx.png");
+    background-size: 280px 256px;
+  }
 }
 
 .example__range-left::after {
   position: absolute;
   content: "";
-  background-image: url(../img/Vector-arrow-left-right.svg);
+  background-image: url("../img/Vector-arrow-left-right.svg");
   background-repeat: no-repeat;
   background-size: 24px 18px;
   background-position: center;
@@ -120,10 +125,15 @@
 }
 
 .example__range-right {
-  background-image: url("../img/CAT-after1x.png");
+  background-image: url("../img/cat-after.png");
   background-repeat: no-repeat;
   background-position: -140px;
-  background-size: cover;
+  background-size: 280px 256px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-after-2ppx.png");
+    background-size: 280px 256px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -136,10 +146,16 @@
 
   .example__range-left {
     position: relative;
-    background-image: url("../img/CAT-before@2x.png");
+    background-image: url("../img/cat-before-next.png");
     background-repeat: no-repeat;
+    background-size: 560px 512px;
     background-position: 0;
     min-width: 280px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-before-next-2ppx.png");
+      background-size: 560px 512px;
+    }
   }
 
   .example__container-padding-flex-next {
@@ -150,7 +166,7 @@
   .example__range-left::after {
     position: absolute;
     content: "";
-    background-image: url(../img/Vector-arrow-left-right.svg);
+    background-image: url("../img/Vector-arrow-left-right.svg");
     background-repeat: no-repeat;
     background-size: 24px 18px;
     background-position: center;
@@ -162,10 +178,16 @@
   }
 
   .example__range-right {
-    background-image: url("../img/CAT-after@2x.png");
+    background-image: url("../img/cat-after-next.png");
     background-repeat: no-repeat;
     background-position: -280px;
+    background-size: 560px 512px;
     min-width: 280px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-after-next-2ppx.png");
+      background-size: 560px 512px;
+    }
   }
 
   .example__range--flex::before {
@@ -249,6 +271,32 @@
     left: 900px;
     top: -50px;
     min-height: 512px;
+  }
+
+  .example__range-left {
+    background-image: url("../img/cat-before-next.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 560px 512px;
+    min-width: 280px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-before-next-2ppx.png");
+      background-size: 560px 512px;
+    }
+  }
+
+  .example__range-right {
+    background-image: url("../img/cat-after-next.png");
+    background-repeat: no-repeat;
+    background-position: -280px;
+    background-size: 560px 512px;
+    min-width: 280px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-after-next-2ppx.png");
+      background-size: 560px 512px;
+    }
   }
 
   .example__container-padding {

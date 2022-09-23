@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" sizes= "16x16">
+  <link rel="icon" href="img/icon-small.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -20,9 +23,7 @@
             </picture>
           </a>
           <h1 class="visually-hidden">Кэт Энерджи</h1>
-          <picture>
             <img class="main-header__menu-svg-cat-energy" src="img/cat-logo-name.svg" width="101" height="18" alt="Имя-логотип Кэт Энерджи">
-          </picture>
           <button class="main-header__menu-burger main-header__menu-burger--hidden" type="button">
             <span class="visually-hidden">закрыть</span>
           </button>
@@ -49,9 +50,9 @@
             <h2 class="index-page__block-title"> Функциональное питание для котов </h2>
             <p class="index-page__block-text">Занялся собой? Займись котом!</p>
             <picture>
-              <source class="index-page__block-picture-desktop" media="(min-width: 1440px)" sizes="552px 499px" srcset="img/index-eat-big-desctap.png">
-              <source class="index-page__block-picture-tablet" media="(min-width: 768px)" sizes="709px 609px" srcset="img/index-can-eat-big.jpg">
-              <img class="index-page__block-picture" src="img/index-eat.png" width="280" height="270" alt="Еда для кошки.">
+              <source media="(min-width: 1440px)" sizes="552px 499px" srcset="img/index-eat-big-desctap.png 1x, img/index-can-eat-desktop-2ppx.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-eat-big.jpg 1x, img/index-can-eat-tablet-2ppx.jpg 2x" sizes="709px 609px">
+              <img class="index-page__block-picture" src="img/index-eat.png" srcset="img/index-can-eat-2ppx.png 2x" width="280" height="270" alt="Еда для кошки.">
             </picture>
           </div>
           <div class="index-page__block-button">
