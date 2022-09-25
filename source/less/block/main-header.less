@@ -12,13 +12,13 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0 17px 0;
+  max-height: 37px;
 }
 
 .main-header__menu--hidden {
   position: absolute;
   width: 100%;
   left: 0;
-  z-index: 100;
 }
 
 .main-header--hidden {
@@ -46,11 +46,17 @@
   .main-header__menu--flex-inner {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
   }
 
   .main-header__menu--flex {
     padding-top: 24px;
     margin-right: 94px;
+  }
+
+  .main-header__menu-link {
+    min-width: 174px;
+    min-height: 51px;
   }
 }
 

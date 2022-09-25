@@ -1,5 +1,5 @@
 .main-header__menu__list-item {
-  padding: 22px 0 24px 0;
+  padding: 20px 0 22px 0;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -20,9 +20,9 @@
   text-transform: uppercase;
 }
 
-.main-header__menu-burger--hidden {
+.main-header__menu-burger {
   position: relative;
-  width: 24px;
+  min-width: 24px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -32,30 +32,68 @@
   align-self: center;
 }
 
-.main-header__menu-burger--hidden::before {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  top: 20px;
-  left: 0;
-  transform: rotate(45deg);
+.main-header__menu-open {
+  position: relative;
+  min-width: 24px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
-.main-header__menu-burger--hidden::after {
+.main-header__menu-open::after {
+  position: absolute;
+  content: "";
+  min-width: 24px;
+  min-height: 16px;
+  cursor: pointer;
+  background-image: url("../img/button-menu.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 16px;
+  background-position: center;
+  top: 15px;
+  left: 0;
+  z-index: 9999999999999999999;
+}
+
+.main-header__menu-burger::before {
   position: absolute;
   content: "";
   width: 24px;
   height: 2px;
   background-color: #000000;
-  top: 20px;
-  left: 0;
+  top: -247px;
+  left: 125px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  z-index: 9999999999999999999999999;
+}
+
+.main-header__menu-burger::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  top: -247px;
+  left: 125px;
   transform: rotate(-45deg);
+  cursor: pointer;
+  z-index: 999999999999999999;
 }
 
 @media (min-width: @tablet-width) {
-  .main-header__menu-burger--hidden {
+  .main-header__menu-open {
+    position: absolute;
+    width: px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-header__menu-burger {
     position: absolute;
     width: px;
     height: 1px;
@@ -85,8 +123,8 @@
   .main-header__menu__list {
     display: flex;
     min-width: 100%;
-    margin-left: 94px;
     justify-content: space-between;
+    align-self: flex-end;
   }
 
   .main-header__menu__list-item {
@@ -103,6 +141,28 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-header__menu-open {
+    position: absolute;
+    width: px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-header__menu-burger {
+    position: absolute;
+    width: px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
   .main-header__menu__list-item-link {
     font-size: 20px;
     font-weight: 400;
