@@ -2,7 +2,7 @@
   position: relative;
   width: 124px;
   margin: 0;
-  padding: 14px 21px 17px 21px;
+  padding: 14px 20px 14px 20px;
   text-align: center;
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
@@ -24,7 +24,24 @@
   position: relative;
 }
 
-.example__range--flex::before {
+.example__range-toggle {
+  position: relative;
+}
+
+.example__range-toggle-button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  top: 105px;
+  left: 120px;
+  cursor: pointer;
+  z-index: 999999999999999999999999;
+}
+
+.example__range-toggle::after {
   content: "";
   position: absolute;
   height: 256px;
@@ -35,16 +52,19 @@
   left: 138px;
 }
 
-.example__range--flex::after {
-  content: "";
+.example__range-toggle-button::after {
   position: absolute;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #666666;
-  top: 105px;
-  left: 118px;
+  content: "";
+  background-image: url("../img/Vector-arrow-left-right.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  background-position: center;
+  min-width: 24px;
+  min-height: 18px;
+  top: 10px;
+  left: 7px;
+  z-index: 9999999999999999;
+  cursor: pointer;
 }
 
 .example__range {
@@ -63,17 +83,19 @@
 .example__container-title {
   display: block;
   position: absolute;
+  line-height: 14px;
+  font-size: 12px;
   padding: 2px 14px;
   background-color: #eaeaea;
   margin: 0;
   color: #444444;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -23px;
+  bottom: -18px;
 }
 
 .example__price {
-  margin: 34px 0 24px 0;
+  margin: 34px 0 20px 0;
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -108,20 +130,6 @@
     background-image: url("../img/cat-before-2ppx.png");
     background-size: 280px 256px;
   }
-}
-
-.example__range-left::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/Vector-arrow-left-right.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 18px;
-  background-position: center;
-  min-width: 24px;
-  min-height: 18px;
-  top: 120px;
-  left: 128px;
-  z-index: 9999999999999999;
 }
 
 .example__range-right {
@@ -163,7 +171,7 @@
     justify-content: space-between;
   }
 
-  .example__range-left::after {
+  .example__range-toggle-button::after {
     position: absolute;
     content: "";
     background-image: url("../img/Vector-arrow-left-right.svg");
@@ -172,8 +180,8 @@
     background-position: center;
     min-width: 24px;
     min-height: 18px;
-    top: 248px;
-    left: 268px;
+    top: 8px;
+    left: 8px;
     z-index: 9999999999999999;
   }
 
@@ -190,7 +198,7 @@
     }
   }
 
-  .example__range--flex::before {
+  .example__range-toggle::after {
     content: "";
     position: absolute;
     height: 512px;
@@ -199,9 +207,10 @@
     background-color: #666666;
     top: 0;
     left: 278px;
+    z-index: 10;
   }
 
-  .example__range--flex::after {
+  .example__range-toggle-button {
     content: "";
     position: absolute;
     height: 40px;
@@ -210,7 +219,8 @@
     background-color: #ffffff;
     border: 2px solid #666666;
     top: 235px;
-    left: 258px;
+    left: 260px;
+    z-index: 100;
   }
 
   .example__container-padding {

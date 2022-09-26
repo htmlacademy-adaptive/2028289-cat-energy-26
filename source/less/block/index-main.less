@@ -1,4 +1,5 @@
 .index-main {
+  padding-top: 198px;
   width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -6,9 +7,19 @@
 
 .index-main__index-page {
   position: relative;
-  min-width: 320px;
-  min-height: 302px;
   margin: 0 auto;
+
+  .container:not(:nth-last-child(1)) {
+    padding: 27px 34px 164px 35px;
+    position: relative;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) right/ 100% 100% no-repeat, url("../img/cat-index-background.jpg") no-repeat center/cover;
+  }
+
+  .container:nth-last-child(1) {
+    display: inline-block;
+    padding: 138px 20px 20px;
+    text-align: center;
+  }
 }
 
 .index-main__programs {
@@ -16,7 +27,7 @@
 }
 
 .index-main__explanation {
-  padding: 0 0 49px 0;
+  padding: 0 0 53px 0;
 }
 
 .index-main__example {
@@ -26,6 +37,7 @@
 
 @media (min-width: @tablet-width) {
   .index-main {
+    padding-top: 0;
     margin: 0 auto;
     box-sizing: border-box;
     min-width: 768px;
@@ -38,6 +50,19 @@
     background-repeat: no-repeat;
     background-position: -30px 110%;
     background-size: 709px 609px;
+
+    .container:not(:nth-last-child(1)) {
+      padding: 0 207px 0 17px;
+      position: relative;
+      background: none;
+      margin-bottom: 47px;
+    }
+
+    .container:nth-last-child(1) {
+      display: inline;
+      padding: 0 404px 0 107px;
+      text-align: center;
+    }
   }
 
   .index-main__programs {
@@ -69,7 +94,20 @@
     padding: 221px 0 185px 0;
     min-width: 720px;
     min-height: 600px;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) right/ 49.5% 100% no-repeat, url("../img/index-background-desktop-cat.jpg") no-repeat right/contain;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) right/ 49% 100% no-repeat, url("../img/index-background-desktop-cat.jpg") no-repeat right/contain;
+
+    .container:not(:nth-last-child(1)) {
+      padding: 0 747px 0 190px;
+      position: relative;
+      background: none;
+      margin-bottom: 47px;
+    }
+
+    .container:nth-last-child(1) {
+      display: inline;
+      padding: 0 404px 0 190px;
+      text-align: center;
+    }
   }
 
   .index-main__programs {
